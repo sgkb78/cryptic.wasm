@@ -3,12 +3,12 @@
   "type": "module",
   "version": "0.1.0",
   "files": [
-    "cryptid_bg.wasm",
-    "cryptid.js",
-    "cryptid.d.ts"
+    "wasm.wasm",
+    "wasm.js",
+    "wasm.d.ts"
   ],
-  "main": "cryptid.js",
-  "types": "cryptid.d.ts",
+  "main": "wasm.js",
+  "types": "wasm.d.ts",
   "sideEffects": [
     "./snippets/*"
   ]
