@@ -1,9 +1,26 @@
-<script type="module">
-    import init from './pkg/cryptid.js'; // Adjust the path as necessary
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bevy App</title>
+    <script type="module">
+        import init from './pkg/cryptid.js'; // Adjust the path as necessary
 
-    async function run() {
-        await init(); // Initialize the Wasm module
-    }
+        async function run() {
+            await init(); // Initialize the Wasm module
+        }
 
-    run();
-</script>
+        run();
+    </script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bevy-canvas"></canvas>
+</body>
+</html>
