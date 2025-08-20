@@ -1,0 +1,15 @@
+{
+  "name": "cryptid",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "cryptid_bg.wasm",
+    "cryptid.js",
+    "cryptid.d.ts"
+  ],
+  "main": "cryptid.js",
+  "types": "cryptid.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
