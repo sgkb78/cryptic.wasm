@@ -34,7 +34,7 @@
         import wasm_bindgen from './api/wasm.js';
 
         async function run() {
-            await wasm_bindgen({module_or_path: "/api/wasm.wasm"}).catch(error => {
+            await wasm_bindgen({module_or_path: "./api/wasm.wasm"}).catch(error => {
                 if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
                     throw error;
                 }
@@ -44,7 +44,7 @@
         const reloadInterval = 1000;
 
         async function startReloadInterval() {
-            const fetchVersion = () => fetch("/api/version").then(response => response.text());
+            const fetchVersion = () => fetch("./api/version").then(response => response.text());
             const version = await fetchVersion();
             let intervalToken;
 
