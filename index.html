@@ -34,7 +34,7 @@
         import wasm_bindgen from './cryptid.js';
 
         async function run() {
-            await wasm_bindgen({module_or_path: "/cryptid_bg.wasm"}).catch(error => {
+            await wasm_bindgen({module_or_path: "./cryptid_bg.wasm"}).catch(error => {
                 if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
                     throw error;
                 }
